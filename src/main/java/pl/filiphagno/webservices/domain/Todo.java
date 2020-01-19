@@ -17,6 +17,9 @@ public class Todo {
         this.userName = userName;
     }
 
+    public Todo() {
+    }
+
     public long getId() {
         return id;
     }
