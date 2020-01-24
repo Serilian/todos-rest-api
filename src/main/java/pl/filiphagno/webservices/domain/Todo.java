@@ -1,9 +1,17 @@
 package pl.filiphagno.webservices.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Todo {
-    private long id;
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
     private String description;
     private Date deadline;
     private boolean isCompleted;
@@ -24,7 +32,7 @@ public class Todo {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

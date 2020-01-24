@@ -11,7 +11,7 @@ import java.util.List;
 public class TodoService {
 
     private List<Todo> todoList;
-    private static int counter = 1;
+    private static Long counter = 1l;
 
     public TodoService() {
         this.todoList = new ArrayList<>();
